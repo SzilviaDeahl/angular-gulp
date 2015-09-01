@@ -17,10 +17,10 @@ gulp.task('styles', function () {
   .pipe(gulp.dest('dist'))
 })
 
-// gulp.task('watchout', function () {
-//   gulp.watch('src/js/*js', ['scripts'])
-//   gulp.watch('src/css/app.css', ['styles'])
-//   gulp.watch('src/index.html', ['html'])
-// })
-//
-// gulp.task('default', ['html', 'scripts', 'styles', 'watchout'])
+gulp.task('watchout', function () {
+  gulp.watch('src/js/*js', ['scripts'])
+  gulp.watch('src/css/app.css', ['styles'])
+  gulp.watch('src/index.html', ['html'])
+})
+
+gulp.task('default', ['html', 'scripts', 'styles', 'watchout'])
